@@ -19,6 +19,6 @@ The app redirects the user to a success page and the transaction ID is displayed
 - Stripe account (free)
 
 # More to come
-- MySQL database
-- PDO
-- Admin pages with authentication
+- MySQL database to store customers and transactions
+- PDO to interact with the database
+- Admin pages with authentication to view customers and transactions
