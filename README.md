@@ -23,5 +23,5 @@ The app redirects the user to a success page and the transaction ID is displayed
 - PDO to interact with the database
 - Admin pages with authentication to view customers and transactions
 
-#Inspiration
+# Inspiration
 Brad Traversy!
