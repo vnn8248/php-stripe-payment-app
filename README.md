@@ -13,6 +13,11 @@ The form gets processed and "charges" the person which can be view on the Stripe
 
 The app redirects the user to a success page and the transaction ID is displayed. 
 
+# Dependencies
+- XAMPP for Windows
+- stripe-php (installed with Composer)
+- Stripe account (free)
+
 # More to come
 - MySQL database
 - PDO
