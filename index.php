@@ -13,7 +13,7 @@
 
 <body>
   <div class="container">
-    <h2 class="my-4 text-center">Make Your Payment</h2>
+    <h2 class="my-4 text-center">Intro to PHP Course: $50</h2>
 
     <form action="charge.php" method="post" id="payment-form">
       <div class="form-row">

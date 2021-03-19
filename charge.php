@@ -12,5 +12,19 @@ $last_name = $POST['last_name'];
 $email = $POST['email'];
 $token = $POST['stripeToken'];
 
+// Create customer in Strip
+$customer = \Stripe\Customer::create(array(
+  "email" => $email,
+  "source" => $token
+));
 
-echo $token;
+// Charge customer
+$charge = \Stripe\Charge::create(array(
+  "amount" => 5000,
+  "currency" => "usd",
+  "description" => "Intro to PHP Course",
+  "customer" => $customer->id
+));
+
+// Redirect to success
+header('Location: success.php?tid='.$charge->id.'&product='.$charge->description);
